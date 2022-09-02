@@ -7,12 +7,20 @@
     <title>Lingwei Kong | Full Stack Web Developer</title>
 
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- web effects -->
+    <script defer src="./web-effect/EasePack.min.js"></script>
+    <script defer src="./web-effect/rAF.js"></script>
+    <script defer src="./web-effect/TweenLite.min.js"></script>
+    <script defer src="./web-effect/main.js"></script>
   </head>
   <body>
     <nav>
@@ -24,6 +32,9 @@
       </ul>
     </nav>
     <div id="hero" class="hero">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+      </div>
       <h2>Hello, I'm Lingwei.</h2>
       <p>I'm a full stack web developer.</p>
     </div>
@@ -31,36 +42,62 @@
       <h2 class="about-title">About</h2>
       <div class="about-body">
         <div class="intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          fuga cum vel maxime id veniam commodi deleniti, nulla aspernatur
-          adipisci? Labore maxime nulla explicabo ullam tenetur eveniet qui.
-          Asperiores, ipsum.
+          constantly changing and imporving. i love getting up in the morning
+          knowing new tech or new projects I'm excited about new techonologies
+          coming up every and I'm hunger for anything new to me. there is always
+          so much out there to learn. I love the feeling of growing and learning
+          a lot when I'm doing projects. I love being creative and finding the
+          most efficient solution to a problem. i love hunt down bugs and make
+          it work. I love and discuss and sharing ideas with other programmers.
+          When I'm not learning new techs and building exciting projects, I
+          enjoy reading books and watching movies. Here is my Github and Resume.
           <a href="">Resume</a>
         </div>
         <div class="skills">
           <div class="skills-subgroup">
-            <div class="skill-item"><img src="" alt="React-icon" />React</div>
             <div class="skill-item">
-              <img src="" alt="Express-icon" />Express
+              <img src="./images/icons8-react-100.png" alt="React-icon" />React
             </div>
             <div class="skill-item">
-              <img src="" alt="MongoDB-icon" />MongoDB
+              <img
+                src="./images/expressjs_logo_icon_169185.svg"
+                alt="Express-icon"
+              />Express
+            </div>
+            <div class="skill-item">
+              <img
+                src="./images/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png"
+                alt="MongoDB-icon"
+              />MongoDB
             </div>
           </div>
           <div class="skills-subgroup">
-            <div class="skill-item"><img src="" alt="HTML icon" />HTML</div>
-            <div class="skill-item"><img src="" alt="CSS icon" />CSS</div>
             <div class="skill-item">
-              <img src="" alt="Javascript icon" />Javascript
+              <img src="./images/icons8-html-5.svg" alt="HTML icon" />HTML
             </div>
-            <div class="skill-item"><img src="" alt="SQL-icon" />SQL</div>
+            <div class="skill-item">
+              <img src="./images/icons8-css3.svg" alt="CSS icon" />CSS
+            </div>
+            <div class="skill-item">
+              <img
+                src="./images/icons8-javascript.svg"
+                alt="Javascript icon"
+              />Javascript
+            </div>
+            <div class="skill-item">
+              <img src="./images/icons8-mysql-48.png" alt="MySQL-icon" />MySQL
+            </div>
           </div>
           <div class="skills-subgroup">
-            <div class="skill-item"><img src="" alt="Git-icon" />Git</div>
             <div class="skill-item">
-              <img src="" alt="Nodejs-icon" />Node.js
+              <img src="./images/icons8-git.svg" alt="Git-icon" />Git
             </div>
-            <div class="skill-item"><img src="" alt="Bash-icon" />Bash</div>
+            <div class="skill-item">
+              <img src="./images/icons8-nodejs.svg" alt="Nodejs-icon" />Node.js
+            </div>
+            <div class="skill-item">
+              <img src="./images/icons8-python.svg" alt="Python-icon" />Python
+            </div>
           </div>
         </div>
       </div>
@@ -87,6 +124,5 @@
       </div>
       <p>Lingwei Kong @ 2022</p>
     </div>
-    <script src="./index.js"></script>
   </body>
 </html>
