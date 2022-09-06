@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     /* background-color: rgb(47, 45, 45); */
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -17,7 +18,11 @@ body{
 
 
 /************************ navigation section *************************/
-
+nav{
+    position:sticky;
+    top: 0;
+    background-color: grey;
+}
 nav ul{
     list-style: none;
     font-size: 1.5rem;
@@ -46,7 +51,7 @@ nav a{
     background: linear-gradient(to bottom, #000000 0%, #87888b 100%);
     
 }
-.hero h2, p{
+.hero h2, .hero p{
     font-size: 3rem;
     font-weight: normal;
     
@@ -93,7 +98,7 @@ nav a{
 
 .about h2{
     font-size: 3rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .about-body{
@@ -132,6 +137,7 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding:0.5rem;
 }
 
 .about .skills-subgroup{
@@ -147,10 +153,45 @@ nav a{
     height: 48px;
 }
 
-/* ******************************************************* */
+/* ********************************* projects section ************************************ */
 .projects{
-    height:100vh;
+   
 }
-.contacts{
-    height:100vh;
+
+
+
+/************************************** contact section *********************************/
+.contact {
+    padding-bottom: 4rem;
+}
+.contact h2{
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact input{
+   
+}
+.contact input, .contact textarea{
+    width: 400px;
+    padding:0.5rem;
+    
+}
+
+textarea{
+    resize:none;
+}
+
+
+/*********************************** footer section  *********************************/
+.footer{
+    height:100px;
+    padding: 1rem;
 }
