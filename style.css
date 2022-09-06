@@ -138,7 +138,11 @@ nav a{
     gap: 1.5rem;
     padding: 0 1rem;
 }
-
+.about .border-wrapper{
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+    border-radius: 1.2rem;
+}
 .about .skill-item{
     border: solid 1px black;
     border-radius: 1rem;
@@ -149,6 +153,8 @@ nav a{
     align-items: center;
     justify-content: center;
     padding:0.5rem;
+
+    
 }
 
 .about .skills-subgroup{
@@ -176,10 +182,13 @@ nav a{
     padding-bottom: 4rem;
 }
 .contact h2{
-    padding: 4rem;
+    padding-top: 4rem;
     font-size: 3rem;
 }
-
+.contact p{
+    padding: 2rem;
+   
+}
 .contact form{
     display: flex;
     flex-direction: column;
@@ -193,13 +202,17 @@ nav a{
 .contact input, .contact textarea{
     width: 400px;
     padding:0.5rem;
-    
+    border-color: transparent;
+    background-color: #3a3939;
 }
 
 textarea{
     resize:none;
 }
 
+.contact button{
+    border-color: transparent;
+}
 
 /*********************************** footer section  *********************************/
 .footer{
