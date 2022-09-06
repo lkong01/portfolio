@@ -4,6 +4,8 @@
     font-family: 'Roboto', sans-serif;
     /* background-color: rgb(47, 45, 45); */
     /* box-sizing: border-box; */
+    background-color: #191A19;
+    color: white;
 }
 
 body{
@@ -21,7 +23,7 @@ body{
 nav{
     position:sticky;
     top: 0;
-    background-color: grey;
+    background-color: #3a3939;
 }
 nav ul{
     list-style: none;
@@ -32,10 +34,13 @@ nav ul{
     gap: 2rem;
 
     margin: 1rem 2rem;
+
+    background-color: #3a3939;
 }
 
 nav a{
     text-decoration: none;
+    background-color: #3a3939;
 }
 
 /************************ hero section *******************************/
@@ -47,8 +52,8 @@ nav a{
     justify-content: center;
     align-items: center;
     gap:2rem;
-    background: black;
-    background: linear-gradient(to bottom, #000000 0%, #87888b 100%);
+    /* background: black;
+    background: linear-gradient(to bottom, #000000 0%, #87888b 100%); */
     
 }
 .hero h2, .hero p{
@@ -56,7 +61,13 @@ nav a{
     font-weight: normal;
     
     position:relative;
-    color:white;
+    
+
+    background-color: transparent;
+}
+.hero span{
+    color: #8FD6E1;
+    background-color: transparent;
 }
 .large-header {
     /* position:relative; */
@@ -98,7 +109,7 @@ nav a{
 
 .about h2{
     font-size: 3rem;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 .about-body{
