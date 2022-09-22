@@ -9,15 +9,17 @@ body{
     display:flex;
     flex-direction: column;
 
-    text-align: center;
+    /* text-align: center; */
     min-width: 450px;
     max-width: 1500px;
-    background-color: #191A19;
+    /* background-color: #191A19; */
+    background-color: black;
     color: white;
 }
 
 h2{
     font-size: 3rem;
+    text-align: center;
 }
 
 /************************ navigation section *************************/
@@ -186,7 +188,7 @@ nav a{
     align-items: center;
     justify-content: center;
     padding:0.5rem;
-    background-color: #191A19;
+    background-color: black;
     border-radius: 1rem;
 }
 
@@ -204,12 +206,77 @@ nav a{
 }
 
 /* ********************************* projects section ************************************ */
-.projects{
-   
+.projects {
+   padding:3rem 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
 }
 
+.projects h2{
+    padding-bottom: 3rem;
+}
 
+.project{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
 
+}
+ 
+
+.project img{
+    width:100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.project-description{
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   gap: 2.5rem;
+   align-items: start;
+   border: #89CFFD solid 1px;
+   padding: 2rem;
+   border-radius: 0.5rem;
+   color: #89CFFD;
+}
+
+.project-description h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.project-description p{
+    line-height: 1.5rem;
+}
+
+.project-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a{
+    text-decoration: none;
+    color:#FFB200;
+    border: #89CFFD solid 1px;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    width:4rem;
+    text-align: center;
+    font-size: 0.9rem;
+
+    transition: transform .2s ease-out;
+}
+
+.project-links a:hover{
+    transform: scale(1.1);
+    background-color: #3a3939;;
+ 
+}
 /************************************** contact section *********************************/
 .contact {
     padding-bottom: 4rem;
@@ -219,6 +286,7 @@ nav a{
 }
 .contact p{
     padding: 2rem;
+    text-align: center;
    
 }
 .contact form{
@@ -259,6 +327,7 @@ textarea{
     display: flex;
     flex-direction: column;
     gap:0.5rem;
+    align-items: center;
 }
 
 
