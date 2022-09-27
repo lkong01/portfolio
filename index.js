@@ -27,9 +27,15 @@ function handleIntersect(entries, observer) {
     if (entry.isIntersecting) {
       console.log(entry.target.querySelector(".intro"));
       const intro = entry.target.querySelector(".intro");
-      const skills = entry.target.querySelector(".skills");
+      const skills = entry.target.querySelectorAll(".skill-item");
       intro.classList.add("slide-in-left");
-      skills.classList.add("fade-in");
+      // skills.classList.add("fade-in");
+      console.log(skills);
+      skills.forEach((skill) => {
+        skill.classList.add("fade-in");
+        skill.style.animationDuration = `${Math.random() * 2.5}s`;
+      });
+      observer.unobserve(boxElement);
     }
   });
 }

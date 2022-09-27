@@ -23,7 +23,7 @@ h2{
 }
 
 .fade-in{
-    animation: 5s 1 ease-in fadein;
+    animation: 1 ease-in fadein;
 }
 
 @keyframes fadein {
@@ -259,7 +259,7 @@ nav a{
 }
 
 .projects h2{
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .project{
@@ -276,11 +276,11 @@ nav a{
     width:100%;
     height: auto;
     max-width: 600px;
-    transition: transform ease-out 0.5s;
+    transition: transform ease-in 0.3s;
 }
 
 .project-img-container:hover .project-img{
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .project-description{
