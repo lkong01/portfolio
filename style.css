@@ -71,6 +71,7 @@ nav{
     position:sticky;
     top: 0;
     background-color: #3a3939;
+    z-index: 1;
 }
 nav ul{
     list-style: none;
@@ -275,6 +276,11 @@ nav a{
     width:100%;
     height: auto;
     max-width: 600px;
+    transition: transform ease-out 0.5s;
+}
+
+.project-img-container:hover .project-img{
+    transform: scale(1.15);
 }
 
 .project-description{
