@@ -22,18 +22,20 @@
     <script defer src="./web-effect/rAF.js"></script>
     <script defer src="./web-effect/TweenLite.min.js"></script>
     <script defer src="./web-effect/main.js"></script>
+
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <div id="hero" class="hero">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
       </div>
-      <h1>
+      <h1 class="slide-in-left">
         Hello, I'm
         <span>Lingwei</span>
         .
       </h1>
-      <h1>I'm a full stack web developer.</h1>
+      <h1 class="slide-in-right">I'm a full stack web developer.</h1>
       <div class="arrow">
         <span></span>
         <span></span>
@@ -62,7 +64,7 @@
           When I'm not learning new techs and building exciting projects, I
           enjoy reading books and watching movies. Here is my Github and Resume.
         </div>
-        <div class="skills">
+        <div class="skills fade-in">
           <div class="skills-subgroup">
             <div class="border-wrapper">
               <div class="skill-item">
@@ -145,7 +147,7 @@
       <h2>Projects</h2>
       <div class="project">
         <img src="./images/reactbook.png" alt="reactbook-pic" />
-        <div class="project-description">
+        <div class="project-description social-app">
           <h3>ReactBook</h3>
           <p>
             Full-Stack Social Media Application built with React, Express.js and
@@ -156,6 +158,38 @@
               Live App
             </a>
             <a href="https://github.com/lkong01/social-app" target="_blank">
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-description shopping">
+          <h3>Pet Clothing Store</h3>
+          <p>E-commerce Website built with React, Redux and eBay Buy API.</p>
+          <div class="project-links">
+            <a href="https://lkong01.github.io/shopping/" target="_blank">
+              Live App
+            </a>
+            <a href="https://github.com/lkong01/shopping" target="_blank">
+              Github
+            </a>
+          </div>
+        </div>
+        <img src="./images/shopping.PNG" alt="reactbook-pic" />
+      </div>
+      <div class="project">
+        <img src="./images/sketchboard.png" alt="sketchboard-pic" />
+        <div class="project-description sketchboard">
+          <h3>Sketch Board</h3>
+          <p>
+            A simple sketch board built with vanilla HTML, css and JavaScript.
+          </p>
+          <div class="project-links">
+            <a href="https://lkong01.github.io/sketch-board/" target="_blank">
+              Live App
+            </a>
+            <a href="https://github.com/lkong01/sketch-board" target="_blank">
               Github
             </a>
           </div>

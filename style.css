@@ -22,6 +22,50 @@ h2{
     text-align: center;
 }
 
+.fade-in{
+    animation: 5s 1 ease-in fadein;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
+.slide-in-left{
+    animation: 0.8s 1 ease-out slideinLeft;
+}
+
+@keyframes slideinLeft {
+    from {
+        opacity: 0.2;
+        transform: translateX(-50%);
+    }
+  
+    to {
+        transform: translateX(0%);
+    }
+  }
+
+  .slide-in-right{
+    animation: 0.8s 1 ease-out slideinRight;
+}
+
+@keyframes slideinRight {
+    from {
+        opacity: 0.2;
+        transform: translateX(50%);
+    }
+  
+    to {
+        transform: translateX(0%);
+    }
+  }
+
 /************************ navigation section *************************/
 nav{
     position:sticky;
@@ -210,7 +254,7 @@ nav a{
    padding:3rem 1rem;
    display: flex;
    flex-direction: column;
-   gap: 2rem;
+   gap: 5rem;
 }
 
 .projects h2{
@@ -239,10 +283,10 @@ nav a{
    flex-direction: column;
    gap: 2.5rem;
    align-items: start;
-   border: #89CFFD solid 1px;
+   border: #34B3F1 solid 1px;
    padding: 2rem;
    border-radius: 0.5rem;
-   color: #89CFFD;
+   color: #34B3F1;
 }
 
 .project-description h3{
@@ -261,20 +305,20 @@ nav a{
 
 .project-links a{
     text-decoration: none;
-    color:#FFB200;
-    border: #89CFFD solid 1px;
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
     width:4rem;
     text-align: center;
     font-size: 0.9rem;
-
+    border: #395B64 solid 1px;
+    color: #F15412;
     transition: transform .2s ease-out;
 }
 
 .project-links a:hover{
     transform: scale(1.1);
-    background-color: #3a3939;;
+    background-color: #7F8487;
+    color: white;
  
 }
 /************************************** contact section *********************************/
